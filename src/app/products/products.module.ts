@@ -4,6 +4,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { BasicPageComponent } from './pages/basic-page/basic-page.component';
 import { NumberPageComponent } from './pages/number-page/number-page.component';
 import { CommonPageComponent } from './pages/common-page/common-page.component';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 
 
@@ -15,7 +16,8 @@ import { CommonPageComponent } from './pages/common-page/common-page.component';
   ],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    PrimeNgModule
   ]
 })
 export class ProductsModule { }
