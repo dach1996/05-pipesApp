@@ -9,10 +9,9 @@ import { CommonPageComponent } from './pages/common-page/common-page.component';
 
 @NgModule({
   declarations: [
-  
     BasicPageComponent,
-       NumberPageComponent,
-       CommonPageComponent
+    NumberPageComponent,
+    CommonPageComponent
   ],
   imports: [
     CommonModule,

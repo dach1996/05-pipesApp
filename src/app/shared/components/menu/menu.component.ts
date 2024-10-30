@@ -15,15 +15,18 @@ export class MenuComponent {
         label: 'Pipes de Angular', icon: 'pi pi-desktop', items: [
           {
             label: 'Textos y Fechas',
-            icon: 'pi pi-align-left'
+            icon: 'pi pi-align-left',
+            routerLink: '/'
           },
           {
             label: 'Números',
-            icon: 'pi pi-dollar'
+            icon: 'pi pi-dollar',
+            routerLink: '/numbers'
           },
           {
-            label: 'No Counes',
-            icon: 'pi pi-globe'
+            label: 'No Comunes',
+            icon: 'pi pi-globe',
+            routerLink: '/uncommon'
           }
         ]
       },
