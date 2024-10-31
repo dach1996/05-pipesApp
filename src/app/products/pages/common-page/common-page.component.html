@@ -29,9 +29,16 @@
         </p-fieldset>
 
         <p-fieldset legend="i18Key Value Pipe" [toggleable]="true">
+            <ul>
+                <li *ngFor="let item of person | keyvalue">
+                    <b>{{item.key}} - {{item.value}}</b>
+                </li>
+            </ul>
         </p-fieldset>
 
         <p-fieldset legend="i18Asuc Pipe" [toggleable]="true">
+
+            <pre>{{myObservibleTime| async}}</pre>
         </p-fieldset>
     </div>
 </div>

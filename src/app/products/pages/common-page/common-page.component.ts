@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-common-page',
@@ -29,4 +30,12 @@ export class CommonPageComponent {
     'other': "Tenemos # clientes esperando"
   };
 
+  public person ={
+    name: 'Fernando',
+    age: 29,
+    geneder: 'Male'
+  }
+
+
+  public myObservibleTime = interval(2000);
 }
