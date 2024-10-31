@@ -18,8 +18,19 @@
 
             </p-button>
         </p-fieldset>
+        <p-fieldset legend="i18Key Slice Pipe" [toggleable]="true">
+            <b>Original</b>
+            <pre>{{clients}}</pre>
+            <b>Slice:1</b>
+            <b>{{clients| slice: 0:2}}</b>
+
+            <b>Slice:1:2</b>
+            <b>{{clients| slice: 1:2}}</b>
+        </p-fieldset>
+
         <p-fieldset legend="i18Key Value Pipe" [toggleable]="true">
         </p-fieldset>
+
         <p-fieldset legend="i18Asuc Pipe" [toggleable]="true">
         </p-fieldset>
     </div>
