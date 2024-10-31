@@ -1,1 +1,22 @@
-<p>common-page works!</p>
+<p-panel header="Pipes Básicos" class="p-1">
+    <h1>Pipes Básicos</h1>
+    <p>Pipes incluidos en Angular - Usualmente</p>
+</p-panel>
+
+<div class="grid mt-2">
+    <div class="col-12 md:col-4">
+
+        <p-fieldset legend="i18Select Pipe" [toggleable]="true">
+            Saludos: {{name}} es un placer {{gender| i18nSelect:invatationMap }} a nuestro evento.
+            <p-button (click)="changeClient()" label="Cambiar Persona">
+
+            </p-button>
+        </p-fieldset>
+        <p-fieldset legend="i18PluralPipe" [toggleable]="true">
+        </p-fieldset>
+        <p-fieldset legend="i18Key Value Pipe" [toggleable]="true">
+        </p-fieldset>
+        <p-fieldset legend="i18Asuc Pipe" [toggleable]="true">
+        </p-fieldset>
+    </div>
+</div>
