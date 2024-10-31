@@ -13,6 +13,10 @@
             </p-button>
         </p-fieldset>
         <p-fieldset legend="i18PluralPipe" [toggleable]="true">
+            <p>Actualmente tenemos {{clients.length | i18nPlural: clientsMap}} clientes esperando</p>
+            <p-button (click)="deleteClient()" label="Borrar Cliente">
+
+            </p-button>
         </p-fieldset>
         <p-fieldset legend="i18Key Value Pipe" [toggleable]="true">
         </p-fieldset>
